@@ -1,0 +1,17 @@
+{
+  "profiles": {
+    "ACSFunctions": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7225",
+      "devTunnelEnabled": true,
+      "devTunnelAccess": "public"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "DockerfileRunArguments": "--init",
+      "httpPort": 33688,
+      "useSSL": false
+    }
+  }
+}
